@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
 
       - name: Display github.ref_name
-      - run: echo ${{ github.ref_name }}
+        run: echo ${{ github.ref_name }}
 
 
