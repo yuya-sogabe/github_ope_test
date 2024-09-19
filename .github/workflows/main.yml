@@ -1,0 +1,19 @@
+name: "github workflow test"
+
+on:
+  push:
+  create:
+  pull_request:
+
+jobs:
+  echo_event:
+    name: "echo_event"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+      - uses: actions/checkout@v2
+
+      - name: Display github.ref_name
+      - run: echo ${{ github.ref_name }}
+
+
