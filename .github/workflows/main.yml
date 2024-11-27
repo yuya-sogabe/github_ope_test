@@ -4,7 +4,6 @@ on:
   create:
     branches:
       - "feature/*"
-      - "feature-*-test/*"
 
 jobs:
   echo_event:
