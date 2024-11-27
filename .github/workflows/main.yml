@@ -1,9 +1,10 @@
 name: "github workflow test"
 
 on:
-  push:
   create:
-  pull_request:
+    branches:
+      - "feature/*"
+      - "feature-*-test/*"
 
 jobs:
   echo_event:
